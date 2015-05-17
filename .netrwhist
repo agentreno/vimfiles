@@ -1,10 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='C:/Users/Karl/Desktop/nand2tetris/nand2tetris/projects'
-let g:netrw_dirhist_2='C:/Windows/System32'
-let g:netrw_dirhist_3='c:'
-let g:netrw_dirhist_4='c:/Users'
-let g:netrw_dirhist_5='c:/Users/Karl'
-let g:netrw_dirhist_6='c:/Users/Karl/vimfiles'
-let g:netrw_dirhist_7='c:/Users/Karl/vimfiles/snippets'
-let g:netrw_dirhist_8='c:/Users/Karl/vimfiles'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='c:/Users/Karl'
+let g:netrw_dirhist_2='c:/Users/Karl/vimfiles'
