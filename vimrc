@@ -19,6 +19,12 @@ set foldlevel=99
 let mapleader=","
 map <leader>n :NERDTreeToggle<CR>
 
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+au CursorMovedI * if pumvisible() == 0|pclose|endif
+au InsertLeave * if pumvisible() == 0|pclose|endif
+
 call pathogen#infect()
 syntax on
 filetype plugin indent on
