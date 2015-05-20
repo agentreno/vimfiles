@@ -16,6 +16,9 @@ highlight Normal ctermbg=black
 set foldmethod=indent
 set foldlevel=99
 
+let mapleader=","
+map <leader>n :NERDTreeToggle<CR>
+
 call pathogen#infect()
 syntax on
 filetype plugin indent on
