@@ -18,6 +18,7 @@ highlight Normal ctermbg=black
 " Code folding
 set foldmethod=indent
 set foldlevel=99
+highlight Folded ctermbg=black
 
 " Set leader key
 let mapleader=","
