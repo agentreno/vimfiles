@@ -16,6 +16,11 @@ endif
 nnoremap / /\v
 vnoremap / /\v
 
+" Highlighting search results
+set incsearch
+set showmatch
+set hlsearch
+
 " Fix for light background in terminals
 highlight Normal ctermbg=black
 
