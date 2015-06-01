@@ -12,6 +12,10 @@ if has("gui_running")
    set guifont=Lucida_Console:h9:cANSI
 endif
 
+" Regex without so many backslashes
+nnoremap / /\v
+vnoremap / /\v
+
 " Fix for light background in terminals
 highlight Normal ctermbg=black
 
