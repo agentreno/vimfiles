@@ -35,6 +35,9 @@ let mapleader=","
 " Map the NERD tree directory listing
 map <leader>n :NERDTreeToggle<CR>
 
+" Disable highlighting temporarily
+map <leader>m :noh<CR>
+
 " Pydoc+Supertab completion for Python
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
