@@ -5,7 +5,6 @@ set expandtab
 set ruler
 set shiftwidth=3
 set softtabstop=3
-set smartindent
 set number
 if has("gui_running")
    colorscheme evening
@@ -49,3 +48,6 @@ au InsertLeave * if pumvisible() == 0|pclose|endif
 call pathogen#infect()
 syntax on
 filetype plugin indent on
+
+" Set Python file-type preferences
+autocmd FileType python setlocal expandtab shiftwidth=3 softtabstop=3
