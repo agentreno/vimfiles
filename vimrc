@@ -1,10 +1,10 @@
 " Standard settings
 set backspace=2
-set tabstop=3
+set tabstop=4
 set expandtab
 set ruler
-set shiftwidth=3
-set softtabstop=3
+set shiftwidth=4
+set softtabstop=4
 set number
 if has("gui_running")
    colorscheme evening
@@ -50,4 +50,4 @@ syntax on
 filetype plugin indent on
 
 " Set Python file-type preferences
-autocmd FileType python setlocal expandtab shiftwidth=3 softtabstop=3
+autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
