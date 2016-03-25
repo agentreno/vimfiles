@@ -1,6 +1,5 @@
 " Standard settings
 set backspace=2
-set expandtab
 set ruler
 set number
 if has("gui_running")
@@ -55,4 +54,5 @@ else
    set shiftwidth=4
    set softtabstop=4
    set tabstop=4
+   set expandtab
 endif
