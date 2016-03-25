@@ -24,6 +24,18 @@ set foldmethod=indent
 set foldlevel=99
 highlight Folded ctermbg=black
 
+" Center after jumping
+nnoremap N Nzz
+nnoremap n nzz
+nnoremap } }zz
+nnoremap { {zz
+
+" Scroll with more intuitive keys
+set <M-j>=j
+set <M-k>=k
+nnoremap <M-j> <C-e>
+nnoremap <M-k> <C-y>
+
 " Set leader key
 let mapleader=","
 
