@@ -1,10 +1,7 @@
 " Standard settings
 set backspace=2
-set tabstop=3
 set expandtab
 set ruler
-set shiftwidth=3
-set softtabstop=3
 set number
 if has("gui_running")
    colorscheme evening
@@ -49,5 +46,13 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 
-" Set Python file-type preferences
-autocmd FileType python setlocal expandtab shiftwidth=3 softtabstop=3
+" Configure detectindent
+if exists(':DetectIndent')
+   let g:detectindent_preferred_indent=4
+   let g:detectindent_preferred_expandtab=1
+   autocmd BufEnter * DetectIndent
+else
+   set shiftwidth=4
+   set softtabstop=4
+   set tabstop=4
+endif
