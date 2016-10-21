@@ -6,6 +6,7 @@ if has("gui_running")
    colorscheme evening
    set guifont=Lucida_Console:h9:cANSI
 endif
+set tw=79
 
 " Regex without so many backslashes
 nnoremap / /\v
