@@ -70,5 +70,6 @@ else
    set expandtab
 endif
 
-" Run flake8 on save for Python files
+" Flake8 config including run on save
 autocmd BufWritePost *.py call Flake8()
+let g:flake8_show_in_gutter=1
