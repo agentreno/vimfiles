@@ -69,3 +69,6 @@ else
    set tabstop=4
    set expandtab
 endif
+
+" Run flake8 on save for Python files
+autocmd BufWritePost *.py call Flake8()
