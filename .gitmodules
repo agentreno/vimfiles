@@ -31,3 +31,6 @@
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "bundle/vim-phpqa"]
+	path = bundle/vim-phpqa
+	url = git@github.com:joonty/vim-phpqa.git
