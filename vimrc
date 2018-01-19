@@ -73,3 +73,7 @@ endif
 " Flake8 config including run on save
 autocmd BufWritePost *.py call Flake8()
 let g:flake8_show_in_gutter=1
+
+" php-qa config to run only linter on save
+let g:phpqa_messdetector_autorun = 0
+let g:phpqa_codesniffer_autorun = 0
