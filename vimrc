@@ -2,11 +2,11 @@
 set backspace=2
 set ruler
 set number
+set tw=0
 if has("gui_running")
    colorscheme evening
    set guifont=Lucida_Console:h9:cANSI
 endif
-set tw=79
 
 " Regex without so many backslashes
 nnoremap / /\v
@@ -36,6 +36,7 @@ set <M-j>=j
 set <M-k>=k
 nnoremap <M-j> <C-e>
 nnoremap <M-k> <C-y>
+set scrolloff=5
 
 " Set leader key
 let mapleader=","
@@ -77,3 +78,7 @@ let g:flake8_show_in_gutter=1
 " php-qa config to run only linter on save
 let g:phpqa_messdetector_autorun = 0
 let g:phpqa_codesniffer_autorun = 0
+
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_use_caching = 0
+let g:ctrlp_custom_ignore = 'node_modules\|\.mypy_cache\|\.git\|\.pytest_cache\|\.hypothesis\|\.ipython|*\.swp|*\.pyc|*\.gz$'
