@@ -75,10 +75,6 @@ endif
 autocmd BufWritePost *.py call Flake8()
 let g:flake8_show_in_gutter=1
 
-" php-qa config to run only linter on save
-let g:phpqa_messdetector_autorun = 0
-let g:phpqa_codesniffer_autorun = 0
-
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_use_caching = 0
 let g:ctrlp_custom_ignore = 'node_modules\|\.mypy_cache\|\.git\|\.pytest_cache\|\.hypothesis\|\.ipython|*\.swp|*\.pyc|*\.gz$'
