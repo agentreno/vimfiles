@@ -27,13 +27,10 @@
 	url = https://github.com/ciaranm/detectindent
 [submodule "bundle/vim-flake8"]
 	path = bundle/vim-flake8
-	url = git@github.com:nvie/vim-flake8
+	url = https://github.com/nvie/vim-flake8
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim
-[submodule "bundle/vim-phpqa"]
-	path = bundle/vim-phpqa
-	url = git@github.com:joonty/vim-phpqa.git
 [submodule "bundle/vim-polyglot"]
 	path = bundle/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
