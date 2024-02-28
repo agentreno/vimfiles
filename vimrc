@@ -47,13 +47,6 @@ map <leader>n :NERDTreeToggle<CR>
 " Disable highlighting temporarily
 map <leader>m :noh<CR>
 
-" Pydoc+Supertab completion for Python
-au FileType python set omnifunc=pythoncomplete#Complete
-let g:SuperTabDefaultCompletionType = "context"
-set completeopt=menuone,longest,preview
-au CursorMovedI * if pumvisible() == 0|pclose|endif
-au InsertLeave * if pumvisible() == 0|pclose|endif
-
 " Load plugins
 call pathogen#infect()
 syntax on
@@ -70,10 +63,6 @@ else
    set tabstop=4
    set expandtab
 endif
-
-" Flake8 config including run on save
-autocmd BufWritePost *.py call Flake8()
-let g:flake8_show_in_gutter=1
 
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_use_caching = 0
